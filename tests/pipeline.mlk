@@ -1,0 +1,26 @@
+# Selectively import functions
+@typescript
+import { fetch_data, process_data } from "functions.ts"
+import { a, b, c, d } from "functions.ts"
+
+@python
+import { analyze_data } from "utilities.py"
+
+# Define execution flow
+[fetch_data:string -> process_data:object] as data_pipeline
+data_pipeline -> analyze_data:float -> generate_report:pdf
+
+[ b -> c -> b ] as bLoop
+
+a -> bLoop -> d -> a
+
+# continued logic with indent
+a -> b
+    b -> c
+
+# new logic path, not associated with above
+b -> d 
+
+# logic flow continued
+a -> b -> a -> b -> c -> c -> d -> # arrow continues logic to next line as it's not pointing to anything
+c -> a -> b -> d # d has no arrow, the link is terminated
