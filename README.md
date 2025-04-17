@@ -7,7 +7,7 @@ ModuLink is a **Modular Execution Orchestration Framework (MEOF)** that allows *
 ✅ **Automatically detects functions from imported modules**  
 ✅ **Provides both CLI execution (`modulink run pipeline.mlk`) & embedded usage (`#include "modulink.h"`)**  
 ✅ **Enforces full type validation at runtime (C++-based validation)**  
-✅ **Infinitely scalable for AI workflows, automation, and modular execution**  
+✅ **Infinitely scalable for AI workflows, automation, and truly modular execution**  
 
 ---
 
@@ -26,11 +26,13 @@ make build
 ```sh
 ./modulink run tests/pipeline.mlk
 ```
-🔥 **Or embed it inside a C++ project**:
-```cpp
+🔥 **Or embed it inside any project of any language**:
+```
+//import into main execution loop
 #include "modulink.h"
 
 int main() {
+    //it will process the pipeline for you, making it truly modular
     executeMLK("tests/pipeline.mlk");
     return 0;
 }
@@ -130,9 +132,7 @@ make test
 
 ---
 
-## **🔗 Next Steps**
-✅ **Refine `.mlk` syntax to support advanced function chaining**  
-✅ **Allow user-defined function registration inside ModuLink**  
-✅ **Develop a UI editor for drag-and-drop function linking**  
+## **🔗 future plans**  
+- create rust based version of ModuLink
 
 🚀 **ModuLink is the future of modular execution—let’s build it together!**  
