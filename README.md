@@ -6,7 +6,7 @@ ModuLink is a **Modular Execution Orchestration Framework (MEOF)** that allows *
 ✅ **Supports `.mlk` files as execution maps**  
 ✅ **Automatically detects functions from imported modules**  
 ✅ **Provides both CLI execution (`modulink run pipeline.mlk`) & embedded usage (`#include "modulink.h"`)**  
-✅ **Enforces full type validation at runtime (C++-based validation replaces TypeScript enforcement)**  
+✅ **Enforces full type validation at runtime (C++-based validation)**  
 ✅ **Infinitely scalable for AI workflows, automation, and modular execution**  
 
 ---
